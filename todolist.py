@@ -33,6 +33,22 @@ class Todo:
         else:
             print("Task cannot be empty.")
 
+    def edit_task(self, task: str, edit: str):
+        """Edit existing task
+        
+        Args: 
+            task: task to be edited
+            edit: edited version of task
+        
+        Notes: 
+        """
+        if task in self.tasks:
+            i = self.tasks.index(task)
+            self.tasks[i] = edit
+            print(f"{task} successfully updated to {edit}")
+        else:
+            print("Error")
+
     def delete_task(self, task: str) -> None:
         """Delete a task from the list.
 
