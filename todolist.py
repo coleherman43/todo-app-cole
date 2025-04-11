@@ -47,7 +47,7 @@ class Todo:
             self.tasks[i] = edit
             print(f"{task} successfully updated to {edit}")
         else:
-            print{"Error"}
+            print("Error")
 
     def delete_task(self, task: str) -> None:
         """Delete a task from the list.
